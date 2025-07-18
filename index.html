@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <p>This website is temporarily empty.</p>
-    <p>This is supposed to be a portfolio website of Rivas.</p>
-    <p>Content will be added later.</p>
+  <header>
+    <h1>My Portfolio</h1>
+    <p class="accent">A glimpse into my work and experience</p>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="assets/me_profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <p>Hello! I'm a graduating computer science student passionate about building impactful software. I enjoy problem-solving, learning new technologies, and collaborating with others.</p>
+      <p>
+        You can <a href="assets/resume.pdf" download class="text-link">download my resume</a>, 
+        or <a href="internship.html" class="text-link">read about my internship experience</a>.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Programming Languages</h2>
+      <ul class="multi-column-list">
+        <li>Python</li>
+        <li>C</li>
+        <li>C#</li>
+        <li>Ruby</li>
+        <li>PHP</li>
+        <li>Lua</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>GitHub Projects</h2>
+      <ul>
+        <li><a href="#">Project 1: Placeholder title</a></li>
+        <li><a href="#">Project 2: Placeholder title</a></li>
+        <li><a href="#">Project 3: Placeholder title</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
 </body>
 </html>
