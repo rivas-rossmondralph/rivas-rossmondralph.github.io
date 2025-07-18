@@ -94,10 +94,20 @@ section {
 /* Footer */
 footer {
   text-align: center;
-  padding: 2rem 1rem 1rem 1rem;
   font-size: 0.9rem;
-  color: #555;
+  padding: 1rem 0;
+  color: #333;
   border-top: 1px solid #ccc;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #007c91; /* your bold teal */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Company assets */
