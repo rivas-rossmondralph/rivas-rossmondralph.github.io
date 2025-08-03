@@ -3,71 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Rossmond Ralph's personal portfolio — a graduating computer science student showcasing programming skills, internship experience, GitHub projects, and resume.">
+  <meta name="description" content="MyName personal portfolio — a graduating computer science student showcasing programming skills, internship experience, GitHub projects, and resume.">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body id="top">
-  <header>
-    <h1>My Portfolio</h1>
-    <p class="accent">A glimpse into what I’ve done in tech</p>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#top" class="nav-logo">My Portfolio</a>
+      
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </label>
+      
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="internship.html">Internship</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Rossmond Ralph</h1>
+      <p class="accent">Computer Scientist & Aspiring Developer</p>
+      <a href="#about" class="hero-button">Explore My Work</a>
+    </div>
   </header>
 
   <div class="container">
-
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="assets/me_profile.jpg" alt="Profile Picture" class="profile-pic" />
-      <p>Hi, I’m Rossmond Ralph Q. Rivas, a graduating Computer Science student. I recently completed an internship where I built a logging module that integrated across multiple teams. I enjoy learning how systems work together and collaborating to solve real-world problems.</p>
-      <p>
-        You can <a href="assets/Resume-RRQR.pdf" download class="text-link">download my resume</a>, 
-        or <a href="internship.html" class="text-link">read about my internship experience</a>.
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Programming Languages</h2>
-      <ul class="multi-column-list">
-        <li>Python</li>
-        <li>C</li>
-        <li>C#</li>
-        <li>Ruby</li>
-        <li>PHP</li>
-        <li>Lua</li>
-        <li>GDScript</li>
-      </ul>
+    <section id="about" class="section-card">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi, I'm Rossmond Ralph, a Computer Science graduate with a passion for building efficient systems and solving complex problems. My journey in tech has been fueled by curiosity and hands-on experience.</p>
+          <p>I recently completed an internship where I built a logging module that integrated across multiple teams. This experience taught me the value of clean code, documentation, and cross-team collaboration.</p>
+          <div class="about-links">
+            <a href="assets/Resume-RRQR.pdf" download class="btn btn-primary">Download Resume</a>
+            <a href="internship.html" class="btn btn-secondary">Internship Details</a>
+          </div>
+        </div>
+        <img src="assets/me_profile.jpg" alt="Profile Picture" class="profile-pic" />
+      </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/rivas-rossmondralph/tapmosquito">Tap Mosquito</a></li>
-        <li><a href="https://github.com/rivas-rossmondralph/ano.c">ano.c</a></li>
-        <li><a href="https://github.com/rivas-rossmondralph/SimpleCalculator">Ruby Simple Calculator</a></li>
-      </ul>
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/testing.png" alt="Logger Module">
+          </div>
+          <div class="project-content">
+            <h3>Logging a Parking Reservation System</h3>
+            <p>A cross-cutting service that tracks and logs all important events in a parking reservation system app built on ASP.NET and Flutter.</p>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/ia.png" alt="Istorya Adventure project">
+          </div>
+          <div class="project-content">
+            <h3>Istorya Adventure</h3>
+            <p>A digital game-based learning where the student shoots at enemies throughout Philippine historic eras in this roguelike bullethell.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/tapm.png" alt="Tap Mosquito Project">
+          </div>
+          <div class="project-content">
+            <h3>Tap Mosquito</h3>
+            <p>A mobile game developed using Godot where players tap mosquitoes to earn points with increasing difficulty levels.</p>
+            <div class="project-links">
+              <a href="https://github.com/rivas-rossmondralph/tapmosquito" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/ano.png" alt="ano.c Project">
+          </div>
+          <div class="project-content">
+            <h3>ano.c</h3>
+            <p>A C programming project demonstrating low-level system interactions and efficient memory management techniques.</p>
+            <div class="project-links">
+              <a href="https://github.com/rivas-rossmondralph/ano.c" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/calc.png" alt="Ruby Calculator Project">
+          </div>
+          <div class="project-content">
+            <h3>Ruby Simple Calculator</h3>
+            <p>A command-line calculator application built with Ruby featuring basic arithmetic operations under MDAS.</p>
+            <div class="project-links">
+              <a href="https://github.com/rivas-rossmondralph/SimpleCalculator" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:rossmondralph@gmail.com">rossmondralph@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/rivas-rossmondralph" target="_blank">github.com/rivas-rossmondralph</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/rossmond-ralph-rivas-a12121360/" target="_blank">linkedin.com/in/rossmond-ralph-rivas-a12121360</a></li>
-      </ul>
+    <section id="skills" class="skills-section">
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Python</span><span class="skill-level">Advanced</span></li>
+            <li><span class="skill-name">C</span><span class="skill-level">Basic</span></li>
+            <li><span class="skill-name">C#</span><span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-name">Ruby</span><span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-name">PHP</span><span class="skill-level">Basic</span></li>
+            <li><span class="skill-name">Lua</span><span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-name">GDScript</span><span class="skill-level">Intermediate</span></li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Technologies & Tools</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Git/GitHub</span><span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-name">ASP.NET</span><span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-name">Flutter</span><span class="skill-level">Basic</span></li>
+            <li><span class="skill-name">MongoDB</span><span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-name">IIS</span><span class="skill-level">Basic</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
+    <section id="contact" class="contact-section">
+      <h2>Get In Touch</h2>
+      <div class="contact-methods">
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <a href="mailto:rossmondralph@gmail.com">rossmondralph@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <a href="https://github.com/rivas-rossmondralph" target="_blank">github.com/rivas-rossmondralph</a>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/rossmond-ralph-rivas-a12121360/" target="_blank">linkedin.com/in/rossmond-ralph-rivas-a12121360</a>
+        </div>
+      </div>
+    </section>
   </div>
 
   <footer>
-  <p>&copy; 2025 Rossmond Ralph Q. Rivas</p>
-    <p>
-      <a href="mailto:rossmondralph@gmail.com">Email</a> |
-      <a href="https://github.com/rivas-rossmondralph" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/rossmond-ralph-rivas-a12121360/" target="_blank">LinkedIn</a> |
-      <a href="#top">Back to top</a>
-    </p>
+    <div class="footer-content">
+      <p>&copy; 2025 Rossmond Ralph. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#top">Back to Top</a>
+        <a href="mailto:rossmondralph@gmail.com">Email</a>
+        <a href="https://github.com/rivas-rossmondralph" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rossmond-ralph-rivas-a12121360/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
   </footer>
-
-
 </body>
 </html>
